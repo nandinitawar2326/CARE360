@@ -1,0 +1,38 @@
+# =========================
+# CARE360 - Git Ignore
+# =========================
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+*.env
+frontend/.env
+backend/.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+# Node dependencies anywhere in project
+node_modules/
