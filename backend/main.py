@@ -49,14 +49,8 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://care-360-2rdzbqll3-nandini2326.vercel.app",
-        "https://care-360-2dybbxmem-nandini2326.vercel.app",
-        "https://care-360-sepia.vercel.app",
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
